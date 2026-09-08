@@ -10,11 +10,11 @@ public class CanteenOrderingSystem {
         do {
             System.out.println("(๑ᵔ⤙ᵔ๑) WELCOME TO THEA'S CANTEEN! (๑ᵔ⤙ᵔ๑)");
             System.out.println("\n--- Canteen Menu ---");
-            System.out.println("1. Burger - ₱50");
-            System.out.println("2. Fries - ₱30");
-            System.out.println("3. Soda - ₱20");
-            System.out.println("4. Footlong - ₱45");
-            System.out.println("5. 1 Rice w/gulay - ₱65");
+            System.out.println("1. Burger ni buseng - ₱50");
+            System.out.println("2. Bisaya Fries  - ₱30");
+            System.out.println("3. Choke float - ₱20");
+            System.out.println("4. Footlong w/extra kiss - ₱45");
+            System.out.println("5. Sandwich w/peanut butterbonia - ₱65");
             System.out.println("6. 1 Rice w/pork sinigang - ₱65");
             System.out.println("7. Exit");
             System.out.print("Enter your choice (1-7): ");
@@ -27,11 +27,11 @@ public class CanteenOrderingSystem {
 
                 int price = 0;
                 switch (choice) {
-                    case 1: price = 50; System.out.println("You ordered Burger."); break;
-                    case 2: price = 30; System.out.println("You ordered Fries."); break;
-                    case 3: price = 20; System.out.println("You ordered Soda."); break;
-                    case 4: price = 45; System.out.println("You ordered Footlong."); break;
-                    case 5: price = 65; System.out.println("You ordered 1 Rice w/gulay."); break;
+                    case 1: price = 50; System.out.println("You ordered Burger ni buseng."); break;
+                    case 2: price = 30; System.out.println("You ordered Bisaya Fries."); break;
+                    case 3: price = 20; System.out.println("You ordered Choke Float."); break;
+                    case 4: price = 45; System.out.println("You ordered Footlong w/extra kiss."); break;
+                    case 5: price = 65; System.out.println("You ordered Sandwich w/peanut butterbonia."); break;
                     case 6: price = 65; System.out.println("You ordered 1 Rice w/pork sinigang."); break;
                 }
 
@@ -42,10 +42,10 @@ public class CanteenOrderingSystem {
                 orderAgain = input.next().charAt(0);
 
             } else if (choice == 7) {
-                System.out.println("Exiting...");
+                System.out.println("Exit na'ko busengg...");
                 orderAgain = 'N';
             } else {
-                System.out.println("Invalid choice. Please try again.");
+                System.out.println("Invalid choice. Can we try again? (Depende kung 3 yan)");
                 orderAgain = 'Y';
             }
 
@@ -75,7 +75,7 @@ public class CanteenOrderingSystem {
         System.out.println("Total before discount: ₱" + total);
         System.out.println("Discount: ₱" + discount);
         System.out.println("Final amount: ₱" + finalAmount);
-        System.out.println("Thank you for ordering!");
+        System.out.println("Salamat sa pag order buseng!");
 
         input.close();
     }
